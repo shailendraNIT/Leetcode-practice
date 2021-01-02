@@ -4,13 +4,13 @@ public:
     int numWays(string s) {
       ll mod=pow(10,9)+7;
       ll n=s.size();
-      cout<<n<<endl;
+      
       ll ones=0;
       for(ll i=0;i<n;i++){
         if(s[i]=='1')ones++;
       }
       if(ones%3!=0)return 0;
-      cout<<ones;
+      
       if(ones==0)return ((n-1)*(n-2)/2)%mod;
       ll sum=ones/3;
       
